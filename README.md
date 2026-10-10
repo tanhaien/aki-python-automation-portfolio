@@ -40,6 +40,6 @@ Client source materials stay private. Samples are MIT licensed; no customer mate
 
 ## Contact and scope
 
-[Open a GitHub issue](https://github.com/tanhaien/aki-python-automation-portfolio/issues/new) with non-sensitive requirements, or contact via an authorized freelancer platform. Please describe the expected input/output, runtime, scope and deadline. **Do not post credentials or proprietary files in a public issue.**
+[Open a GitHub issue](https://github.com/tanhaien/aki-python-automation-portfolio/issues/new?template=service_quote.yml) with non-sensitive requirements, or contact via an authorized freelancer platform. Please describe the expected input/output, runtime, scope and deadline. **Do not post credentials or proprietary files in a public issue.**
 
 **Status:** This is a public technical portfolio and price menu; it is not a registered Upwork/Contra/Fiverr catalog or evidence of any contracted work.

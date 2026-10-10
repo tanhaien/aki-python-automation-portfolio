@@ -1,0 +1,51 @@
+name: "Python service quote request"
+description: "Request a written estimate for a Python bug fix, automation, or unit tests. This issue is PUBLIC; do not include credentials or private data."
+title: "Quote request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This request is **public**. Never include passwords, API tokens, personal data, customer files or proprietary code.
+        The service menu shows proposed starting prices, not automatically accepted or prepaid orders.
+        After reviewing scope we can arrange a contract and payment using an agreed lawful platform.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      options:
+        - "Python bug / REST API fix (starting $49)"
+        - "CSV / JSON / API automation (starting $79)"
+        - "Unit tests / QA review (starting $39)"
+        - "Other small Python task"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Expected behavior or outcome
+      placeholder: "Describe the goal using non-confidential example data only."
+    validations:
+      required: true
+  - type: textarea
+    id: tech
+    attributes:
+      label: Runtime, constraints and example inputs (optional)
+      placeholder: "Python version, OS, permitted dependencies, approximate size; do not paste credentials."
+    validations:
+      required: false
+  - type: input
+    id: deadline
+    attributes:
+      label: Preferred delivery date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Privacy and AI assistance
+      options:
+        - label: "I understand this is public and have not included secret or private data."
+          required: true
+        - label: "AI-assisted coding is allowed for this task, subject to review and tests."
+          required: false
