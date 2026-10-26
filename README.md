@@ -15,10 +15,12 @@ Most work can be scoped and delivered through **written/asynchronous communicati
 |---|---|---|
 | [Python token bucket](demo/token_bucket/rate_limiter.py) | Configurable requests/sec and burst, thread safety, no dependencies | [15 deterministic tests](demo/token_bucket/test_rate_limiter.py) |
 | [CSV normalizer](demo/csv_cleanup/csv_cleanup.py) | Safe local CSV data cleanup, deterministic dedupe, input validation, CLI | [7 tests](demo/csv_cleanup/test_csv_cleanup.py) |
+| [Webhook-to-CSV Ingestion](demo/webhook_csv/README.md) | Validated JSON webhook receipt ingestion, idempotency hashing, atomic CSV append | [12 tests](demo/webhook_csv/tests/test_receipts.py) |
 
 ```bash
 cd demo/token_bucket && python3 -m unittest -v test_rate_limiter.py
 cd ../csv_cleanup && python3 -m unittest -v test_csv_cleanup.py
+cd ../webhook_csv && python3 -m unittest discover -s tests -v
 ```
 
 [View the portfolio website](https://tanhaien.github.io/aki-python-automation-portfolio/) · [GitHub profile](https://github.com/tanhaien)
