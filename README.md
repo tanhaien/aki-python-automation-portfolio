@@ -25,21 +25,13 @@ cd ../webhook_csv && python3 -m unittest discover -s tests -v
 
 [View the portfolio website](https://tanhaien.github.io/aki-python-automation-portfolio/) · [GitHub profile](https://github.com/tanhaien)
 
-## Business Implementation & Practical Value
+## Practical use cases and limitations
 
-### 1. Step-by-Step Implementation Workflow
-- **Delivery & Setup:** Buyer receives the self-contained module (zero external dependencies for core CLI; standard Python 3.10+ stdlib).
-- **Integration:** The buyer configures file directories or webhook endpoints. For daily runs, a single-line cron job (`0 8 * * * python3 csv_cleanup.py --input /data/inbox --output /data/clean`) automates processing. For real-time webhooks, the ingestion service receives payloads, validates JSON schemas, checks idempotency keys to prevent duplicates, and atomically writes records to target storage.
-- **Audit & Monitoring:** Every batch execution produces machine-readable audit logs (lines cleaned, duplicates dropped, conflicts flagged) so business teams have complete visibility.
+[Read the step-by-step Python webhook-to-CSV idempotency tutorial](guides/python-webhook-csv-deduplication.md): a real executable, offline demo of validated saved JSON input, same-event deduplication, changed-payload conflict rejection, and locked whole-file CSV replacement. It has **12 deterministic tests** within the total 34 tests across this portfolio's three independent demos.
 
-### 2. Practical Business Illustration
-- **Scenario:** A growing retail operations team manually processes multi-vendor transaction sheets every morning before feeding downstream accounting software. Inconsistent date formats and duplicate webhook event deliveries caused frequent ledger discrepancies.
-- **Solution:** Implementing this automated pipeline sanitized malformed fields in milliseconds, deduplicated replayed webhook events via deterministic SHA-256 payload hashing, and ensured 100% clean data exports without manual review.
+**Example workflow (illustrative, not a client engagement):** a small internal tool receives verified, saved receipt JSON files and imports them into a local CSV without duplicating exact replays. An authenticated network webhook endpoint, signature verification, background scheduler, vendor API integration, and database-backed processing would require separately scoped work.
 
-### 3. Expected Outcomes & ROI
-- **Labor Savings:** Saves 12–15 hours/week previously spent on manual data scrubbing and error troubleshooting.
-- **Zero Ingestion Failures:** Schema normalization eliminates crashes during downstream database or ERP imports.
-- **Deterministic Reliability:** Backed by 34 automated unit tests verifying edge cases, concurrency, and idempotent replays.
+**No guaranteed outcomes:** The portfolio has no verified client ROI, hours saved, zero-failure production deployment, or prior paid customer testimonials. Measure the real time saved, data accuracy, operating costs, and reliability for each specific buyer before claiming benefits.
 
 ## Fixed-scope packages
 
