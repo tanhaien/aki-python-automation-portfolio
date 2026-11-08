@@ -52,4 +52,4 @@ For full limitations, review [the demo's known limitations](../demo/webhook_csv/
 
 A 32-second original terminal demonstration has been recorded and prepared as a vertical video, but a public YouTube link is **not yet available**. No paid clients, endorsements, buyer orders or verified ROI are claimed.
 
-For small Python, CSV or API automation scopes, see [the portfolio service menu](../README.md). Written-only work can be considered after defining input/output examples and agreeing on an appropriate funded milestone. Do not put credentials or private files in public GitHub issues.
+**Need a small Python / CSV automation fix?** [Request a written, fixed-scope estimate using the public quote form](https://github.com/tanhaien/aki-python-automation-portfolio/issues/new?template=service_quote.yml). The form asks for the expected input/output, runtime and deadline. You can also [compare the proposed starting prices](../README.md#fixed-scope-packages). Quotes are not orders; a contract, permitted AI-tool use, payment method and funded milestone must be agreed before work starts. **Never post credentials, customer data or private code in a public issue.**
