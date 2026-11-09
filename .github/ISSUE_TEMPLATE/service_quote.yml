@@ -1,51 +1,64 @@
-name: "Python service quote request"
-description: "Request a written estimate for a Python bug fix, automation, or unit tests. This issue is PUBLIC; do not include credentials or private data."
+name: "Small automation / Python service quote"
+description: "Ask for a written estimate on a small fixed-scope task. Public form: no secrets or customer data."
 title: "Quote request: "
 body:
   - type: markdown
     attributes:
       value: |
-        This request is **public**. Never include passwords, API tokens, personal data, customer files or proprietary code.
-        The service menu shows proposed starting prices, not automatically accepted or prepaid orders.
-        After reviewing scope we can arrange a contract and payment using an agreed lawful platform.
+        **Written-only, asynchronous inquiries welcome.** This is a PUBLIC GitHub issue.
+        Do not post passwords, access tokens, private repositories, customer information, or confidential files.
+
+        **First-client micro-pilots (illustrative, subject to scope and fees):**
+        - CSV/Excel cleanup: **from $25**, one CSV/XLSX sheet, up to 500 rows, dedupe/trim/header cleanup only
+        - Small Python bug fix: **from $35**, one reproducible defect and one regression test
+        - Small unit test package: **from $25**, up to three focused tests in one module
+        - Other Python/REST API/automation services: see the portfolio's standard service menu.
+
+        These are **conditional estimates**, not an instant purchase, guaranteed availability, or evidence of past paid clients.
+        Before work: confirm a complete scope, platform eligibility, AI use rules, reasonable net pay after fees,
+        legal payment method and a funded milestone/contract. No upfront deposits are requested from the seller.
   - type: dropdown
     id: service
     attributes:
-      label: Service
+      label: Which small deliverable do you need?
       options:
-        - "Python bug / REST API fix (starting $49)"
-        - "CSV / JSON / API automation (starting $79)"
-        - "Unit tests / QA review (starting $39)"
-        - "Other small Python task"
+        - "CSV / Excel cleanup (conditional pilot from $25; 1 sheet up to 500 rows)"
+        - "One Python bug + regression test (conditional pilot from $35)"
+        - "Up to 3 Python unit tests (conditional pilot from $25)"
+        - "Python bug / REST API fix (standard package starting $49)"
+        - "CSV / JSON / API automation (standard package starting $79)"
+        - "Unit tests / QA review (standard package starting $39)"
+        - "Other small technical or data task"
     validations:
       required: true
   - type: textarea
-    id: scope
+    id: outcome
     attributes:
-      label: Expected behavior or outcome
-      placeholder: "Describe the goal using non-confidential example data only."
+      label: What input and output should the result have?
+      description: "Use a made-up example. What counts as done?"
+      placeholder: "Example: Given a CSV with 200 synthetic rows, return a CSV with duplicates removed and a one-line row-count check."
     validations:
       required: true
   - type: textarea
-    id: tech
+    id: constraints
     attributes:
-      label: Runtime, constraints and example inputs (optional)
-      placeholder: "Python version, OS, permitted dependencies, approximate size; do not paste credentials."
+      label: Technical constraints (optional)
+      placeholder: "Operating system, Python version, approximate file size, timeline and permitted tools; no secrets."
     validations:
       required: false
   - type: input
     id: deadline
     attributes:
-      label: Preferred delivery date
+      label: Desired delivery date (optional)
       placeholder: "YYYY-MM-DD"
     validations:
       required: false
   - type: checkboxes
     id: disclosure
     attributes:
-      label: Privacy and AI assistance
+      label: Privacy and AI tool permissions
       options:
-        - label: "I understand this is public and have not included secret or private data."
+        - label: "I understand this public issue must contain only non-confidential information."
           required: true
-        - label: "AI-assisted coding is allowed for this task, subject to review and tests."
+        - label: "AI-assisted coding is allowed if the resulting work is independently checked and tested."
           required: false
