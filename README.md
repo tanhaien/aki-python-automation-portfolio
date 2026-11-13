@@ -9,6 +9,8 @@ Small, practical Python projects with reproducible tests and direct source links
 
 Most work can be scoped and delivered through **written/asynchronous communication**. AI coding tools may be used where the client and platform permit them; deliverables are still reviewed and tested.
 
+**Need a small Webhook JSON → CSV job without a call?** [Use the fixed-scope buyer checklist](guides/webhook-to-csv-fixed-scope-quote-checklist.md) and [request a written quote](https://github.com/tanhaien/aki-python-automation-portfolio/issues/new?template=service_quote.yml). No credentials or customer data in public issues.
+
 ## Demos
 
 | Example | Features | Proof |
