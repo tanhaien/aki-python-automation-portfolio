@@ -12,6 +12,7 @@ body:
         - CSV/Excel cleanup: **from $25**, one CSV/XLSX sheet, up to 500 rows, dedupe/trim/header cleanup only
         - Small Python bug fix: **from $35**, one reproducible defect and one regression test
         - Small unit test package: **from $25**, up to three focused tests in one module
+        - Webhook JSON → CSV: one agreed JSON schema, up to 10 columns, local batch export, synthetic examples and tests; quote after requirements and platform fees
         - Other Python/REST API/automation services: see the portfolio's standard service menu.
 
         These are **conditional estimates**, not an instant purchase, guaranteed availability, or evidence of past paid clients.
@@ -22,6 +23,7 @@ body:
     attributes:
       label: Which small deliverable do you need?
       options:
+        - "Webhook JSON → CSV batch export (one schema, up to 10 columns; written quote)"
         - "CSV / Excel cleanup (conditional pilot from $25; 1 sheet up to 500 rows)"
         - "One Python bug + regression test (conditional pilot from $35)"
         - "Up to 3 Python unit tests (conditional pilot from $25)"
