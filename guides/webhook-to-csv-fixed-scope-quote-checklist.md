@@ -29,3 +29,7 @@ Demo is not a claim of previous paid client delivery. Development may use AI ass
 [Open the public GitHub quote request form](https://github.com/tanhaien/aki-python-automation-portfolio/issues/new?template=service_quote.yml). **Do not include confidential payloads, personal information, credentials or private code in a public GitHub issue.** Describe the schema using invented example fields only; share sensitive data only through a subsequently approved private channel, if necessary.
 
 This is a sample offer, not an existing paid client engagement. No quote is binding until scope, terms and funded milestone are agreed.
+
+## Reproducible acceptance example
+
+[See synthetic inputs and exact expected CSV output](webhook-csv-buyer-acceptance-example.md) before requesting a quote.
